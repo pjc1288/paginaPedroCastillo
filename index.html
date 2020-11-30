@@ -13,145 +13,222 @@
     <script src="https://kit.fontawesome.com/7acfb2ba9a.js"></script>
 
 </head>
+<!--..................................... End of head ................................ -->
 
-<!-- End of head -->
-<article>
 
-<!--################################### HEADER ################################## -->
+<!--################################### BODY ####################################### -->
 
-    <!-- HEADER -> logo -> nav -> Button -->
+<body>
 
-    <header class="header">
+    <!--################################### HEADER ####################################### -->
 
-        <!-- NAV starts-->
+    <header class="header" id="inicio">
 
-     <nav class="header-nav">
-    
-         <!--logo--------------->
+        <nav class="c-nav">   
+        <!-- BLOCK Logo --------------------------------------------------------->
         
-         <a href="#" class="logo__link"><img src="img/logo.png" alt="logo Pedro Castillo Web Developer" class="logo__img"></a>
-
-         <!--menu-btn- ha sido comentado porque no sabemos a que se refiere en copia------------->
- 
-         
-         
-
-
-
-        <!--menu-------------->
-         <ul class="nav-menu">
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#inicio">Inicio</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#sobremi">Sobre Mi</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#Conocimientos">Conocimientos</a></li>          <li class="nav-menu__item"><a class="nav-menu__link" href="#servicios">Servicios</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#portafolio">Portafolio</a></li>	
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#blog">Blog</a></li>	
+        <a href="#inicio" class="logo__link"><img src="img/logo.png" alt="" class="logo__img"></a>
+        
+        <!-- BLOCK NAV --------------------------------------------------------->
+        <!-- ul.main-nav>(li.main-nav__item>a.main-nav__link[href=#1$]{1$})*5 -->
+        <ul class="main-nav">
+            <li class="main-nav__item"><a href="#inicio" class="main-nav__link">Inicio</a></li>
+            <li class="main-nav__item"><a href="#sobremi" class="main-nav__link">Sobre mi</a></li>
+            <!-- <li class="main-nav__item"><a href="#Conocimientos" class="main-nav__link">Conocimientos</a></li> -->
+            <li class="main-nav__item"><a href="portfolio.html" class="main-nav__link">Portfolio</a></li>
+            <li class="main-nav__item"><a href="blog.html" class="main-nav__link">Blog</a></li>
         </ul>
         
-
-        <!--Contratátame--------->
-        <button class="header-nav__button" type="button">Contrátame!</button>
-     </nav>
+        <!-- Contact Me button -------------------------------------------------->
+        <a class="button" href="#contratame" role="button"> 
+            <span class="skillbar__text" class="button__text">Contáctame!</span class="skillbar__text">
+        </a>
+        
+    </nav> 
 </header>
 
-<!--................................... END OF HEADER............................... -->
-<!--################################### SECTION HELLO ############################## -->
 
-    <!--content----------------->
-<article class="hello">
-    
-    <!--content box--------------->   
-        <section class="hello-text"> 
+<!--################################### SLIDER ####################################### -->    
+    <!-- BLOCK MAIN TEXT --------------------------------------------------------->
 
-            <div class="hello-bubble">
-                <h2 class="hello-bubble__title">Hola, soy</h2>
+    <article class="slider" id="inicio">
+
+        <Section class="slider__c-text">
+            <div class="bubble">
+                <h2 class="bubble__title">hola, Soy</h2>
             </div>
+            <h1 class="slider__title">Pedro Castillo</h1>
+            <p class="slider__text">Hey, Soy un desarrollador web full-stack. <br> Echa un vistazo a mi web y comencemos a crear juntos</p>
+            <button class="button button--big button--filled" type="button">Descarga mi CV</button>
+            <button class="button button--big" type="button">Mi Portafolio</button>
+            </div>
+        </Section>
 
-                <!--text-------------->
-            <h1 class="hello-text__title">Pedro Castillo</h1>
-            <p class="hello-text__paragraph">Hey, Soy un desarrollador web full-stack. Echa un vistazo a mi web y comencemos a crear juntos.</p>
-    
-                <!--buttons-------------->
-            <div class="hello-button">
-                <button class="hello__button" type="button">Descarga mi CV</button>
-                <button class="hello__button hello__button--bg-transparent" type="button">Mi Portafolio</button>
-             </div>
-
-        </section>
-
-    <!--my picture--------------->
-        <img  class="hello-img" src="img/model.png" alt="picture-Pedro-Castillo-Web">
-
-
-    <!--button down--------------->
-    <a class="hello__button-down" href="#sobremi"><i class="fas fa-long-arrow-alt-down "></i></a>
-
-    </article>
-
-
-<!--.............................. END OF ARTICLE HELLO............................... -->
-
-
-
-
-
+            <!--my picture--------------->
+            <img  class="model" src="img/modelPedroCastillo.png" alt="picture-Pedro-Castillo-Web">
+            
+        </article>
+        
+            <!--button --------------->
+        <div class="l-button-down">
+        <a class="button button--down" href="#sobremi" role="button"><i class="fas fa-long-arrow-alt-down "></i></a>
+        </div>
 
 
 <!--############################### SECTION ABOUT ############################## -->
 
 <article class="about">
 
-    <h2 id="sobremi" class="about__title">SOBRE MI</h2>
-
     <!--box container----------------------------------->
-    <section class="about-box">
+    <section class="l-card-about">
 
       <!--box 1----------------------------------->
-      <div class="about-box__skill">
+        <div class="card-about">
           <!--icon fast----------------------------------->
-         <i class="fas fa-tachometer-alt skill__icon"></i>
-         <!--details------>
-         <h2>Rápido</h2>
-         <p class="skill__paragraph">Tiempos de carga rápidos e interacción sin retrasos, mi máxima prioridad.</p>
-      </div>
+            <i class="card-about__icon fas fa-tachometer-alt skill__icon"></i>
+          <!--details------>
+            <h2 class="card-about__tittle">Rápido</h2>
+            <p class="card-about__text">Tiempos de carga rápidos e interacción sin retrasos, mi máxima prioridad.</p>
+        </div>
 
         <!--box 2----------------------------------->
-        <div class="about-box__skill">
-            <!--icon fast----------------------------------->
-            <i class="far fa-lightbulb skill__icon"></i>
-           <!--details------>
-            <h2>Creativo</h2>
-           <p class="skill__paragraph">Preferencia por un desarollo UX / UI intuitivo, facil de usar y con un excelente diseño. </p>
+        <div class="card-about">
+            <i class="card-about__icon far fa-lightbulb skill__icon"></i>
+            <h2 class="card-about__tittle">Creativo</h2>
+            <p class="card-about__text">Preferencia por un desarollo UX / UI intuitivo, facil de usar y con un excelente diseño. </p>
         </div>
-
 
         <!--box 3----------------------------------->
-        <div class="about-box__skill">
-            <!--icon fast----------------------------------->
-            <i class="fas fa-laptop skill__icon"></i>
-           <!--details------>
-            <h2>Responsive</h2>
-           <p class="skill__paragraph">Mis diseños funcionarán en cualquier dispositivo, grande o pequeño.</p>
+        <div class="card-about">
+            <i class="card-about__icon fas fa-laptop skill__icon"></i>
+            <h2 class="card-about__tittle">Responsive</h2>
+            <p class="card-about__text">Mis diseños funcionarán en cualquier dispositivo, grande o pequeño.</p>
         </div>
 
-
-
         <!--box 4----------------------------------->
-        <div class="about-box__skill">
-            <!--icon fast----------------------------------->
-            <i class="fas fa-rocket skill__icon"></i>
-           <!--details------>
-            <h2>Dinámico</h2>
-           <p class="skill__paragraph">Diseñamos juntos tu idea, creamos tu web, doy vida a tu proyecto y lo hago crecer</p>
+        <div class="card-about">
+            <i class="card-about__icon fas fa-rocket skill__icon"></i>
+            <h2 class="card-about__tittle">Dinámico</h2>
+            <p class="card-about__text">Diseñamos juntos tu idea, creamos tu web, doy vida a tu proyecto y lo hago crecer</p>
         </div>
     </section>
 
+</article>
 
-
-
-
-
+        <!--About Description----------------------------------->
+        
+    <h2 class="about__title"  id="sobremi">SOBRE MI</h2>
+<article class="about-main">
     
-    </article>
+    <section class="c-profile">
+        <!-- <div class="l-about__description"> -->
+            <img class="c-profile__img" src="img/model.png" alt="Pedro Castillo Picture">
+            <h2 class="c-profile__tittle">¿Pero quién eres?</h2>
+            <p class="c-profile__text">Soy un creador de ideas</p>
+        <!-- </div> -->
+    </section>
+
+        <!--Skills ----------------------------------->
+    <section class="l-skill">
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text" class="skillbar__text">HTML</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--90"></div>
+                <div class="skillbar__percent-number">90%</div>
+            </div>
+            <div class="skillbar">
+                <div class="skillbar__title"><span class="skillbar__text" class="skillbar__text">CSS</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">85%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">JavaScript</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">80%</div>
+            </div>
+            <div class="skillbar" data-percent="80%">
+                <div class="skillbar__title"><span class="skillbar__text">React</span class="skillbar__text"></div>
+                <div class="skill-bar-80"></div>
+                <div class="skillbar__percent-number">80%</div>
+            </div>
+            <div class="skillbar" data-percent="80%">
+                <div class="skillbar__title"><span class="skillbar__text">Node.js</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">60%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">Ui Design</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">Photoshop</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">Adobe XD</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">Ilustrator</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">Wordpress</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">HTML5</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+            <div class="skillbar" data-percent="20%">
+                <div class="skillbar__title"><span class="skillbar__text">HTML5</span class="skillbar__text"></div>
+                <div class="skillbar__main skillbar__main--85"></div>
+                <div class="skillbar__percent-number">20%</div>
+            </div>
+    </section>
+</article>
+
+
+<!--############################### SECTION CONTACT ############################## -->
+
+<article id="contratame" class="contact">
+    <h2 class="contact__title">CONTACTO</h2>
+    <p class="contact__text">¿Tienes alguna duda o quieres que trabajemos juntos?</p>
+    <section class="form-content">
+        <form class="main-form" action="" method="POST" target="_Blank">
+     
+         <label class="form-label" for="name">Tu Nombre</label>
+         <input class="form-input" type="text" id="name" name="nombre">
+     
+         <!-- <label class="form-label" for="surname">Apellido</label> -->
+         <!-- <input class="form-input" type="text" id="surname" name="surname"> -->
+ 
+         <label class="form-label" for="mail">Email</label>
+         <input class="form-input" type="email" id="mail" name="mail">
+ 
+         <!-- <label class="form-label" for="subject">Asunto</label> -->
+         <!-- <input class="form-input" type="text" id="subject" name="subject"> -->
+ 
+         <label class="form-label" for="text-area">Cuéntame</label>
+         <textarea class="form-input form-input--text-area" name="textarea" Write something here></textarea>
+     
+         <input class="form-input main-submit" type="submit" id="submit">
+     </form>
+    </section>  
+ </article>
+
+ <footer class="footer">
+    <div class="l-footer-button">
+     <a class="" href="#inicio" role="button"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
+    <p class="footer__text">Pedro Castillo</p>
+    <p class="footer__text footer__description">Designer · Developer · UI/UX</p>
+</footer>
 
 </body>
 </html>
