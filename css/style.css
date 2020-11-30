@@ -205,10 +205,10 @@ body{
 
 .l-card-about {
     display: inline-block;
-	display: flex;
+    display: flex;
+    flex-wrap: nowrap;
 	justify-content: center;
     align-items: center;
-	flex-wrap: wrap;
 	margin:20px 0px;
 }
 
@@ -484,10 +484,27 @@ body{
     justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media only screen and (max-width: 961px) {
+    .l-card-about{
+    flex-wrap: wrap;
+    }
+
 }
 
 
 
-@media only screen and (max-width: 480px)
 
+@media only screen and (max-width: 750px){
+    .c-nav{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 1120px){
+    .slider{
+        flex-direction: column;
+    }
+
+
+}
